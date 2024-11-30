@@ -1,5 +1,5 @@
 """
-update_stats.py
+update_readme.py
 
 This script calculates the experience in years since a hard-coded start date
 and updates a README file using a Jinja2 template.
