@@ -1,0 +1,48 @@
+name: Update README.md
+
+on:
+  schedule:
+    # Schedule the workflow to run every 6 months (January 1st and July 1st)
+    - cron: "0 0 1 1,7 *"
+  workflow_dispatch:  # Allow manual trigger
+    inputs:
+      force:
+        description: 'Force update README.md'
+        required: false
+        default: 'false'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install jinja2
+
+      - name: Audit dependencies
+        run: pip install pip-audit && pip-audit
+
+      - name: Execute update_readme.py from cogs folder
+        run: |
+          cd cogs
+          python update_readme.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ../README.md
+          git commit -m "Update README.md automatically"
+          git push
+
+permissions:
+  contents: write
+  actions: none
