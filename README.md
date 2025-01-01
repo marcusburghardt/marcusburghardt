@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cybersecurity%20Expert-21%2B%20Years-blue?style=flat-square" alt="Cybersecurity Expert">
+  <img src="https://img.shields.io/badge/Cybersecurity%20Expert-22%2B%20Years-blue?style=flat-square" alt="Cybersecurity Expert">
   <img src="https://img.shields.io/badge/Software%20Engineer-Python%2C%20Go%2C%20Django-green?style=flat-square" alt="Software Engineer">
   <img src="https://img.shields.io/badge/DevOps-Ansible%2C%20Containers-orange?style=flat-square" alt="DevOps - Ansible">
 </p>
@@ -45,4 +45,4 @@ Your support fuels my commitment to creating impactful, reliable tools for every
 [bmc_url]: https://www.buymeacoffee.com/marcusburghardt
 <br>
 
-_Last updated on: `2024-11-30`_
+_Last updated on: `2025-01-01`_
