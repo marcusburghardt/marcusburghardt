@@ -1,0 +1,3 @@
+# Python dependencies for update_readme.py
+# Managed by Dependabot for automated security updates.
+jinja2==3.1.6
