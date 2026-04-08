@@ -11,34 +11,36 @@ on:
         required: false
         default: 'false'
 
+permissions:
+  contents: write
+  actions: none
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
-          python-version: '3.9'
+          python-version: '3.13'
 
       - name: Upgrade pip and setuptools
         run: |
           pip install --upgrade pip
-          pip install --upgrade "setuptools>=65.5.1"
+          pip install --upgrade setuptools
 
       - name: Install dependencies
-        run: pip install jinja2
+        run: pip install -r requirements.txt
 
       - name: Audit dependencies
         run: pip install pip-audit && pip-audit
 
-      - name: Execute update_readme.py from cogs folder
-        run: |
-          cd cogs
-          python update_readme.py
+      - name: Execute update_readme.py
+        run: python cogs/update_readme.py
 
       - name: Commit and push changes
         run: |
@@ -52,7 +54,3 @@ jobs:
             git commit -m "Update README.md automatically"
             git push
           fi
-
-permissions:
-  contents: write
-  actions: none
