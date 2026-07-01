@@ -45,4 +45,4 @@ Your support fuels my commitment to creating impactful, reliable tools for every
 [bmc_url]: https://www.buymeacoffee.com/marcusburghardt
 <br>
 
-_Last updated on: `2026-04-08`_
+_Last updated on: `2026-07-01`_
