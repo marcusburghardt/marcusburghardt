@@ -28,7 +28,7 @@ Cheers to collaboration and innovation!
 
 ## 📊 GitHub Statistics
 
-![Marcus Burghardt's GitHub stats](https://github-readme-stats.vercel.app/api?username=marcusburghardt&show=reviews,prs_merged_percentage&show_icons=true&theme=transparent)
+![Marcus Burghardt's GitHub stats](https://github-readme-stats.vercel.app/api?username=marcusburghardt&show_icons=true&theme=transparent)
 
 ## 🛠️ Main Languages I Use
 
