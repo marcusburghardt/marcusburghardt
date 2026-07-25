@@ -28,11 +28,11 @@ Cheers to collaboration and innovation!
 
 ## 📊 GitHub Statistics
 
-![Marcus Burghardt's GitHub stats](https://github-readme-stats.vercel.app/api?username=marcusburghardt&show_icons=true&theme=transparent)
+![Marcus Burghardt's GitHub stats](https://github-readme-stats-eight-theta.vercel.app/api?username=marcusburghardt&show_icons=true&theme=transparent)
 
 ## 🛠️ Main Languages I Use
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=marcusburghardt&layout=compact&theme=transparent)
+![Top Languages](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=marcusburghardt&layout=compact&theme=transparent)
 
 ## 🚀 Support Me
 
